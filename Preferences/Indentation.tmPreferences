@@ -15,11 +15,11 @@
             (&lt;/(?!html)
               [A-Za-z0-9]+\b[^&gt;]*&gt;
             |--&gt;
-            |&lt;\?(php)?\s+(else(if)?|end(if|for(each)?|while))
+            |&lt;\?(php)?\s+(else|empty|el(if)?|end(if|for(each)?|while))
             |\})
         )|
         (?:
-            ^\s*\{%-?\s(end(?:autoescape|block|embed|filter|for|if|macro|raw|sandbox|set|spaceless|trans|verbatim)|(else))(?:(?!%\}).)*\s-?%\}
+            ^\s*\{%-?\s(end(?:autoescape|block|embed|filter|for|if|macro|raw|sandbox|set|spaceless|trans|verbatim)|(else|empty|el))(?:(?!%\}).)*\s-?%\}
         )
         </string>
         <key>increaseIndentPattern</key>
@@ -29,11 +29,11 @@
             &lt;(?!\?|area|base|br|col|frame|hr|html|img|input|link|meta|param|[^&gt;]*/&gt;)
               ([A-Za-z0-9]+)(?=\s|&gt;)\b[^&gt;]*&gt;(?!.*&lt;/\1&gt;)
             |&lt;!--(?!.*--&gt;)
-            |&lt;\?php.+?\b(if|else(?:if)?|for(?:each)?|while)\b.*:(?!.*end\1)
+            |&lt;\?php.+?\b(if|else|empty|el(?:if)?|for(?:each)?|while)\b.*:(?!.*end\1)
             |\{[^}"']*$
         )|
         (?:
-            ^\s*\{%-?\s(autoescape|block|embed|filter|for|if|else|macro|raw|sandbox|set|spaceless|trans|verbatim)(?:(?!%\}).)*\s-?%\}(?!.*\{%-?\send\1)
+            ^\s*\{%-?\s(autoescape|block|embed|filter|for|if|else|empty|el|macro|raw|sandbox|set|spaceless|trans|verbatim)(?:(?!%\}).)*\s-?%\}(?!.*\{%-?\send\1)
         )
         </string>
         <key>bracketIndentNextLinePattern</key>
