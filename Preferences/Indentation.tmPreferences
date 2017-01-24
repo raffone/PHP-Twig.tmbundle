@@ -33,7 +33,7 @@
             |\{[^}"']*$
         )|
         (?:
-            ^\s*\{%-?\s(autoescape|block|embed|filter|for|if|else|empty|el|macro|raw|sandbox|set|spaceless|trans|verbatim)(?:(?!%\}).)*\s-?%\}(?!.*\{%-?\send\1)
+            ^\s*\{%-?\s(autoescape|block|embed|filter|for|if|else|empty|el|macro|raw|sandbox|set|spaceless|trans|verbatim)(?:(?!%\}).)*\s-?%\}(?!.*\{%-?\send)
         )
         </string>
         <key>bracketIndentNextLinePattern</key>
