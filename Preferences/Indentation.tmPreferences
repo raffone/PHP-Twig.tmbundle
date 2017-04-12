@@ -15,11 +15,11 @@
             (&lt;/(?!html)
               [A-Za-z0-9]+\b[^&gt;]*&gt;
             |--&gt;
-            |&lt;\?(php)?\s+(else|empty|el(if)?|end(if|for(each)?|while))
+            |&lt;\?(php)?\s+(else|empty|el(if)?|end(if|for(each)?|while|with))
             |\})
         )|
         (?:
-            ^\s*\{%-?\s(end(?:autoescape|block|embed|filter|for|if|macro|raw|sandbox|set|spaceless|trans|verbatim)|(else|empty|el))(?:(?!%\}).)*\s-?%\}
+            ^\s*\{%-?\s(end(?:autoescape|block|embed|filter|for|if|macro|raw|sandbox|set|spaceless|trans|verbatim|with)|(else|empty|el))(?:(?!%\}).)*\s-?%\}
         )
         </string>
         <key>increaseIndentPattern</key>
